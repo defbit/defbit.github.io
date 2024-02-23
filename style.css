@@ -540,14 +540,14 @@
   position: fixed;
   top: 0;
   right: 0;
-  margin: 10px; /* Adicione margens conforme necessário */
+  margin: 10px; /* Adicione margens conforme necessário*/
 }
 
 .icon {
-  width: 80px; /* ajuste conforme necessário */
+  width: 80px;  /*ajuste conforme necessário */
   height: 80px; /* ajuste conforme necessário */
   /* Adicione outros estilos conforme necessário */
-}
+}*/
 
 
 #calendario {
@@ -625,7 +625,4 @@
     bottom: 50px; /* Ajuste da posição do painel de adicionar evento */
   }
 
-  .icon-container {
-    display: none; /* Ocultar o ícone na tela pequena */
-  }
 }
