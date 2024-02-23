@@ -30,7 +30,25 @@
     background-color: #000;
   }
   
-  /*retangulo cinza 747474*/
+  .container {
+    position: relative;
+    width: 100%; /* Alterado para ocupar 100% da largura da tela */
+    min-height: 100vh; /* Alterado para ocupar 100% da altura da tela */
+    margin: 0 auto;
+    padding: 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Alterado para empilhar os elementos verticalmente */
+    border-radius: 10px;
+    background-color: #747474;
+  }
+  
+  .left {
+    width: 100%; /* Alterado para ocupar 100% da largura do contêiner pai */
+    padding: 20px;
+  }
+  
+  /*retangulo cinza 747474
   .container {
     position: relative;
     width: 1200px;
@@ -41,12 +59,12 @@
     display: flex;
   
     border-radius: 10px;
-    background-color: #757575d2;
+    background-color: #9b0101d2;
   }
   .left {
     width: 60%;
     padding: 20px;
-  }
+  }*/
 
   /*retangulo de janeiro e 2024 #aaa7a7; */
   .calendar {
@@ -502,20 +520,21 @@
     padding-left: 4px;
 }
 
-/* Adicionando um quadrado branco no lugar de "sem eventos" */
 .events .no-event {
-    background-color: #a5a5a5;/* Cor de fundo */
-    width: 100%;
-    padding: 20px; /* Adicione algum preenchimento interno conforme necessário */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #000000;
-    border: 1px solid #747474; /* Adicione uma borda conforme desejado */
-    border-radius: 25px; /* Adicione borda arredondada conforme desejado */
+  background-color: #a5a5a5;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  border: 1px solid #747474;
+  border-radius: 25px;
+  margin-top: 20px; /* Adicione margem superior conforme desejado */
 }
+
 .icon-container {
   position: fixed;
   top: 0;
@@ -557,4 +576,52 @@
 
 .oculto {
   display: none;
+}
+/* Consulta de mídia para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+  body {
+    padding-bottom: 10px; /* Reduzir o espaçamento inferior no corpo para dispositivos móveis */
+  }
+
+  .container {
+    flex-direction: column; /* Empilhar os elementos verticalmente em telas pequenas */
+    width: 100%; /* Ocupar toda a largura disponível */
+    padding: 5px 10px; /* Ajuste do preenchimento para telas menores */
+  }
+
+  .left,
+  .right {
+    width: 100%; /* Ocupar toda a largura disponível */
+    padding: 10px; /* Ajuste do preenchimento para telas menores */
+  }
+
+  .calendar .month {
+    padding: 0 10px; /* Ajuste do preenchimento para telas menores */
+  }
+
+  .calendar .days .day {
+    height: 50px; /* Redução da altura dos dias */
+    font-size: 0.8rem; /* Redução do tamanho da fonte dos dias */
+  }
+
+  .calendar .days .event::after {
+    height: 4px; /* Redução da altura do indicador de evento */
+  }
+
+  .right .today-date,
+  .add-event-wrapper {
+    padding: 10px; /* Ajuste do preenchimento para telas menores */
+  }
+
+  .events .event {
+    min-height: 60px; /* Ajuste da altura mínima dos eventos */
+  }
+
+  .add-event-wrapper {
+    bottom: 50px; /* Ajuste da posição do painel de adicionar evento */
+  }
+
+  .icon-container {
+    display: none; /* Ocultar o ícone na tela pequena */
+  }
 }
