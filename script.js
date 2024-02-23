@@ -512,3 +512,26 @@ function navigateToCreatePage(type) {
   // Redirecione para a nova página
   window.location.href = newPath;
 }
+function selecionarPrioridade(cor) {
+            // Adicione aqui a lógica para lidar com a seleção de prioridade
+            console.log('Prioridade selecionada:', cor);
+        }
+
+        function salvarTarefa() {
+          console.log('Informações da tarefa salvas!');
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('salvarButton').addEventListener('click', function() {
+              console.log('Tarefa salva com sucesso!');
+          });
+        })
+        
+        function cancelarButton() {
+          window.location.href = 'agendaDiaria.html';
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('cancelarButton').addEventListener('click', redirectToAgendaDiaria);
+        
+        });

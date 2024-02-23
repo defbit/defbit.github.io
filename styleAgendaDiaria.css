@@ -21,7 +21,6 @@ h1 {
     color: #ffffff; /* Cor do texto de sua escolha */
     margin: 10px 0; /* Margem superior e inferior */
 }
-
 .horario-list {
     font-family: "Poppins", sans-serif;
     font-size: 1.3rem;
@@ -32,6 +31,7 @@ h1 {
     left: 180px; /* Ajuste a posição à esquerda conforme necessário */
     top: 170px; /* Ajuste a posição superior conforme necessário */
     color: #ffffff;
+    cursor: pointer;
 }
 
 .horario-list-item {
@@ -60,17 +60,20 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     border-radius: 25px; /* Adiciona bordas arredondadas */
+    font-size: 1rem;
 }
 
 .popup ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    font-size: 1rem;
 }
 
 .popup ul li {
     cursor: pointer;
     padding: 10px;
+    font-size: 1rem;
     /*border-bottom: 1px solid #ccc;*/
 }
 
@@ -87,19 +90,3 @@ h1 {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
-    /* Estilos específicos para dispositivos móveis */
-
-    #dateBox {
-        width: 20%; /* Ajuste a largura do dateBox para telas menores */
-    }
-
-    .horario-list {
-        left: 10px; /* Ajuste a posição à esquerda para telas menores */
-        top: 100px; /* Ajuste a posição superior para telas menores */
-    }
-
-    .popup {
-        padding: 100px; /* Ajuste a altura do padding para telas menores */
-    }
-}

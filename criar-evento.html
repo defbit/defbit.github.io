@@ -6,6 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="criar-atividade.css" />
-    <title>CRIAR EVENTO</title>
-    <h1>CRIAR EVENTO</h1>
+    <title>CRIAR EVENTO </title>
 </head>
+<body>
+    <h1>CRIAR EVENTO </h1>
+    <div id="dateBox"></div>
+    <ul class="cabecalho-list">
+        <li class="cabecalho-list-item">
+            <span>NOME</span>
+            <input type="text" placeholder="Digite o nome" />
+        </li>
+        <li class="cabecalho-list-item">
+            <span>DESCRIÇÃO</span>
+            <input type="text" placeholder="Digite a descrição" />
+        </li>
+        <li class="cabecalho-list-item">
+            <span>DEADLINE</span>
+            <input type="text" placeholder="Digite o deadline" />
+        </li>
+        <li class="cabecalho-list-item">
+            <span>ALARME</span>
+            <input type="text" placeholder="Digite o alarme" />
+        </li>
+        <li class="cabecalho-list-item">
+            <span>ADICIONAR CONTATO</span>
+            <input type="text" placeholder="Adicionar contato" />
+        </li>
+        <li class="cabecalho-list-item">
+            <span>ADICIONAR ARQUIVO</span>
+            <input type="text" placeholder="Adicionar arquivo" />
+        </li>
+        <li class="cabecalho-list-item">
+            <span>PRIORIDADE</span>
+            <ul class="prioridade-buttons">
+                <li><button class="prioridade-button vermelho" onclick="selecionarPrioridade('vermelho')"></button></li>
+                <li><button class="prioridade-button amarelo" onclick="selecionarPrioridade('amarelo')"></button></li>
+                <li><button class="prioridade-button azul" onclick="selecionarPrioridade('azul')"></button></li>
+                <li><button class="prioridade-button verde" onclick="selecionarPrioridade('verde')"></button></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="botao-container">
+        <button id="salvarButton">Salvar</button>
+        <button id="cancelarButton">Cancelar</button>
+    </div>
+    
+</body>
+</html>
