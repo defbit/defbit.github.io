@@ -59,7 +59,7 @@ h1 {
     font-size: 14px;
     color: #ffffff; /* Adicione a cor desejada para o texto do input */
 }
-cabecalho-list {
+.cabecalho-list {
     list-style: none;
     padding: 0;
 }
@@ -145,3 +145,36 @@ cabecalho-list {
     left: 0;
     right: 0;
 }
+.adicionar-contato-container button {
+    width: 30px; /* Defina a largura do botão como desejado */
+    height: 30px; /* Defina a altura do botão como desejado */
+    border-radius: 50%; /* Transforma o botão em um círculo */
+    background-color: #000000; /* Cor de fundo do botão */
+    color: rgb(255, 255, 255); /* Cor do texto dentro do botão */
+    font-size: 16px; /* Tamanho da fonte do texto dentro do botão */
+    border: 2px solid #ffffff; /* Define a borda do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-weight: bold;
+}
+
+.adicionar-contato-container button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.adicionar-link-container button {
+    width: 30px; /* Defina a largura do botão como desejado */
+    height: 30px; /* Defina a altura do botão como desejado */
+    border-radius: 50%; /* Transforma o botão em um círculo */
+    background-color: #000000; /* Cor de fundo do botão */
+    color: rgb(255, 255, 255); /* Cor do texto dentro do botão */
+    font-size: 16px; /* Tamanho da fonte do texto dentro do botão */
+    border: 2px solid #ffffff; /* Define a borda do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-weight: bold;
+}
+
+.adicionar-link-container button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+

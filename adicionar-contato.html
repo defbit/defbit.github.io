@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleReuniao.css" />
+    <style>
+        /* Estilos para o retângulo centralizado */
+        #centralizado {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            border-radius: 25px;
+            font-size: 1rem;
+            text-align: center; /* Centralizar texto */
+            
+        }
+
+        /* Estilo para o texto fixo acima da caixa de texto */
+        #textoFixo {
+            margin-bottom: 10px; /* Adiciona espaço abaixo do texto */
+        }
+
+        /* Estilo para a caixa de texto */
+        #minhaCaixaDeTexto {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Adicionar Contato</title>
+</head>
+<body>
+
+    <!-- Retângulo centralizado -->
+    <div id="centralizado">
+        <p id="textoFixo">Adicionar um contato</p>
+        <input type="text" id="minhaCaixaDeTexto" placeholder="Digite o contato">
+        <button id="btnConcluir">Concluir</button>
+    </div>
+
+    <script>
+        // Exibir o retângulo centralizado quando a página for carregada
+        window.onload = function() {
+            document.getElementById('centralizado').style.display = 'block';
+        };
+    </script>
+</body>
+</html>

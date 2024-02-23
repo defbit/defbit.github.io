@@ -1,0 +1,35 @@
+body {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #000000; /* Cor de fundo de sua escolha */
+}
+
+#closeButton {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+#btnConcluir {
+    background-color: #747474;
+    color: #000000;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 20px; /* Margem externa */
+    margin-top: 30px; /* Ajuste da margem superior */
+    cursor: pointer;
+}
+
+/* Estilos para a caixa de texto */
+#caixaTexto {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
